@@ -71,7 +71,22 @@ class ItemCRUDModel extends CI_Model{
          Print_r($qq);
         die;
     }
+    public function login_eregistered($email, $password){
+        
+        $query = $this->db->get_where('register', array('email'=>$email, 'password'=>$password));
+        return $query->row_array();
+       // Print_r($q);
+        //die;
+    }
+    public function user_eregistered($data)
+    {
+        $query2 = $this->db->get_where('register', array('email'=>$data));
+         $qq= $query2->row_array();
+         Print_r($qq);
+        die;
+    }
 }
+
 
 
 ?>

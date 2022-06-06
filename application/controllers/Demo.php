@@ -5,6 +5,10 @@ class Demo extends CI_Controller
     {
        $this->load->view('demo');
     }
+    public function ivbfdndex()
+    {
+       $this->load->view('demo');
+    }
 }
 
 
